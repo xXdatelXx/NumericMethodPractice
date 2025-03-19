@@ -1,6 +1,6 @@
 from Practicums.Second.RootMethods import *
 from Practicums.First.FunctionExploration import Explore
-from sympy import sympify, solve
+from sympy import solve
 
 print("First exercise")
 
