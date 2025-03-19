@@ -35,7 +35,6 @@ def simple_iteration(expr, x, tol, max_iter=1000):
 
     for _ in range(max_iter):
         x_new = phi(x)
-        print(x_new)
         if abs(x_new - x) < tol:
             return x_new
         x = x_new
