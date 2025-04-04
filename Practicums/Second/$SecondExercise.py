@@ -1,6 +1,7 @@
 from Practicums.Second.RootMethods import *
 from Practicums.First.FunctionExploration import Explore
 from sympy import solve
+import numpy as np
 
 print("First exercise")
 
@@ -21,7 +22,9 @@ if [root for root in roots if root.is_real]:
 else:
     print("Dont have real roots")
 
-print("Complex:")
+coefficients = [1, -3, 9, -10]
+roots = np.roots(coefficients)
+
 for root in roots:
-    if not root.is_real:
-        print(root)
+    print(root)
+
